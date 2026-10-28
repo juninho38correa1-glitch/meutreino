@@ -1,0 +1,30 @@
+MEU TREINO — página pronta para GitHub Pages
+
+ARQUIVOS PRINCIPAIS
+- index.html: página responsiva com autenticação e sincronização pelo Supabase.
+- supabase-config.js: URL do projeto e chave publicável (publishable key).
+- assets/: miniaturas ilustradas dos exercícios, no mesmo estilo visual.
+
+COMO PUBLICAR NO GITHUB
+1. Crie um repositório no GitHub.
+2. Envie todo o conteúdo desta pasta outputs (index.html, supabase-config.js e assets/).
+3. No repositório, abra Settings > Pages.
+4. Em Build and deployment, escolha Deploy from a branch, selecione a branch principal e a pasta /(root), e salve.
+5. Abra o endereço Pages exibido pelo GitHub no celular. Também é possível adicionar a página à tela inicial pelo menu do navegador.
+
+O QUE A PÁGINA FAZ
+- Reúne os cinco treinos traduzidos e miniaturas esquemáticas com figura masculina.
+- Permite iniciar um treino, marcar exercícios e registrar a finalização.
+- Séries, repetições e carga são editáveis por exercício e sincronizadas na conta.
+- Permite escolher dias recorrentes para cada treino; a agenda é salva na conta.
+- Calcula o IMC a partir de altura e peso e oferece ideias gerais de refeições conforme o objetivo.
+- Autenticação e sincronização usam Supabase Auth e RLS. Uma cópia local auxilia a recuperação e importação inicial.
+
+OBSERVAÇÕES
+- Séries, repetições e cargas foram transcritas conforme aparecem nos PDFs. Onde a ficha não traz o dado, a página mostra “Não informado”.
+- No treino de peito, a ficha chama o exercício de “Dumbbell Bench Press” e registra a carga como “15kg máquina”; a página preserva essa observação.
+- As miniaturas são esquemas ilustrativos para reconhecimento do movimento, não instruções de técnica.
+- As sugestões de refeições são exemplos gerais, não foram geradas por IA e não substituem orientação nutricional individual.
+- O IMC é apenas uma referência para adultos e não mede composição corporal.
+- A página estática não se conecta diretamente ao Apple Saúde nem ao Samsung Health. Essa integração exige um app nativo com permissões do sistema; no Android, Samsung Health pode sincronizar dados compatíveis com Health Connect.
+- Para configurar Supabase e executar a migração necessária, siga outputs/supabase/LEIA-ME.txt. Nunca publique uma chave Secret/service_role.
